@@ -64,17 +64,22 @@
           height="25%"
         />
         <p></p>
-        <div id="slider-value">
-          ?
-        </div>  
+        <div id="slider-value">?</div>
         <!-- Slider with Starting Value -->
         <!-- Note: I added and ID to this component, so I could reference it in code -->
         <!-- Note: I also placed it inside a "label" for accessability -->
         <label>
           Slider's Value
-          <input id = "slider" class="mdl-slider mdl-js-slider" type="range"
-          min="1" max="6" value="2" tabindex="0"
-          onchange = "updatesSliderValue(this.value)">
+          <input
+            id="slider"
+            class="mdl-slider mdl-js-slider"
+            type="range"
+            min="1"
+            max="6"
+            value="2"
+            tabindex="0"
+            onchange="updatesSliderValue(this.value)"
+          />
         </label>
         <!-- Raised button with ripple -->
         <button

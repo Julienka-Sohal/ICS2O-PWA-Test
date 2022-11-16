@@ -18,15 +18,15 @@ if (navigator.serviceWorker) {
 // returns a random integer from 1 to 6 into variable "randomNumber"
 const randomNumber = Math.floor(Math.random() * 6) + 1
 
-  //process
-  function myButtonClicked() {
-  const buttonOnChecked = document.getElementById('roll1').checked
-    
-    if (buttonOnChecked == true) {
-      document.getElementById("radio-button-value").innerHTML =
+//process
+function myButtonClicked() {
+  const buttonOnChecked = document.getElementById("roll1").checked
+
+  if (buttonOnChecked == true) {
+    document.getElementById("radio-button-value").innerHTML =
       "You rolled for " + randomNumber + "."
-    } else {
-      document.getElementById("radio-button-value").innerHTML =
+  } else {
+    document.getElementById("radio-button-value").innerHTML =
       "You rolled for -" + randomNumber + "."
-    }
   }
+}

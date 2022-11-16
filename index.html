@@ -11,9 +11,9 @@
     <title>My first 'if' statement</title>
     <link
       rel="canonical"
-      href="https://Julienka-Sohal.github.io/ICS2O-Unit5-01-JS/"
+      href="https://Julienka-Sohal.github.io/ICS2O-Unit5-02-JS/"
     />
-    <link rel="manifest" href="/ICS2O-Unit5-01-JS/manifest.webmanifest" />
+    <link rel="manifest" href="/ICS2O-Unit5-02-JS/manifest.webmanifest" />
     <link rel="stylesheet" href="./css/styles.css" />
     <!--- None blocking for Lighthouse report --->
     <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously --->
@@ -64,26 +64,31 @@
           height="25%"
         />
         <p></p>
-        <div id="slider-value">?</div>
-        <!-- Slider with Starting Value -->
-        <!-- Note: I added and ID to this component, so I could reference it in code -->
-        <!-- Note: I also placed it inside a "label" for accessability -->
-        <label>
-          Slider's Value
-          <input
-            id="slider"
-            class="mdl-slider mdl-js-slider"
-            type="range"
-            min="1"
-            max="6"
-            value="2"
-            tabindex="0"
-            onchange="updatesSliderValue(this.value)"
-          />
-        </label>
-        <!-- answer -->
-        <p></p>
-        <div id="answer"></div>
+        <div id="radio-button-value">
+          ?
+        </div>
+        <div id="radio-buttons">
+          <!-- radio button 1 -->
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="roll1">
+              <input checked class="mdl-radio__button" id="roll1" name="roll" type="radio"
+               value="on">
+              <span class="mdl-radio__label">Positive</span>
+            </label>
+          <!-- radio button 2 -->
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="roll2">
+              <input class="mdl-radio__button" id="roll2" name="roll" type="radio" value="off">
+              <span class="mdl-radio__label">Negative</span>
+            </label>
+        </div>
+        <div>
+          <!-- Raised button with ripple -->
+          <button
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            onclick="myButtonClicked ()"
+            >
+            Show Value
+          </button>
+        </div>
       </main>
     </div>
   </body>

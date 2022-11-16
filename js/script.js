@@ -20,12 +20,13 @@ const randomNumber = Math.floor(Math.random() * 6) + 1
 
   //process
   function myButtonClicked() {
-  buttonOnChecked = document.getElementById('roll1').checked
-
-  if (buttonOnChecked == true) {
-    document.getElementById("radio-button-value").innerHTML =
-    "You rolled for " + randomNumber + "."
-  } else {
-    document.getElementById("radio-button-value").innerHTML =
-    "You rolled for -" + randomNumber + "."
+  const buttonOnChecked = document.getElementById('roll1').checked
+    
+    if (buttonOnChecked == true) {
+      document.getElementById("radio-button-value").innerHTML =
+      "You rolled for " + randomNumber + "."
+    } else {
+      document.getElementById("radio-button-value").innerHTML =
+      "You rolled for -" + randomNumber + "."
+    }
   }

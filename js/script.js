@@ -15,18 +15,20 @@ if (navigator.serviceWorker) {
   })
 }
 
-// returns a random integer from 1 to 6 into variable "randomNumber"
-const randomNumber = Math.floor(Math.random() * 6) + 1
-
 //process
 function myButtonClicked() {
-  const buttonOnChecked = document.getElementById("roll1").checked
+  const ageCheckedOne = document.getElementById("age1").checked
+  const ageCheckedTwo = document.getElementById("age2").checked
 
-  if (buttonOnChecked == true) {
+
+  if (ageCheckedOne == true) {
     document.getElementById("radio-button-value").innerHTML =
-      "You rolled for " + randomNumber + "."
+      "You are old enough to watch an R rated movie"
+  } else if (ageCheckedTwo) {
+    document.getElementById("radio-button-value").innerHTML =
+      "You are old enough to watch a PG-13 mocie"
   } else {
     document.getElementById("radio-button-value").innerHTML =
-      "You rolled for -" + randomNumber + "."
+      "You are old enough to watch a G rated movie"
   }
 }

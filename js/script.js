@@ -20,7 +20,6 @@ function myButtonClicked() {
   const ageCheckedOne = document.getElementById("age1").checked
   const ageCheckedTwo = document.getElementById("age2").checked
 
-
   if (ageCheckedOne == true) {
     document.getElementById("radio-button-value").innerHTML =
       "You are old enough to watch an R rated movie"

@@ -20,13 +20,16 @@ function myButtonClicked() {
   const buttonOnChecked = document.getElementById("ageInput").value
 
   if (buttonOnChecked >= 17) {
-    document.getElementById("radio-button-value").innerHTML =
+    document.getElementById("movie-maturity-recommendation").innerHTML =
       "You are old enough to watch an R rated movie, PG-14 movies and G rated movies if you wish!"
   } else if (buttonOnChecked >= 13) {
-    document.getElementById("radio-button-value").innerHTML =
+    document.getElementById("movie-maturity-recommendation").innerHTML =
       "You are old enough to watch a PG-13 movie! However not an R rated movie yet..."
-  } else {
-    document.getElementById("radio-button-value").innerHTML =
+  } else if (buttonOnChecked >= 4) {
+    document.getElementById("movie-maturity-recommendation").innerHTML =
       "You are old enough to watch a G rated movie! However not an PG-13 movies or R rated movies..."
+  } else {
+    document.getElementById("movie-maturity-recommendation").innerHTML =
+      "You shouldn't be watching movies at all!"
   }
 }

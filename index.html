@@ -11,9 +11,9 @@
     <title>My first 'if, else if' statement</title>
     <link
       rel="canonical"
-      href="https://julienka-sohal.github.io/ICS2O-Unit5-03-JS/"
+      href="https://julienka-sohal.github.io/ICS2O-Unit5-04-JS/"
     />
-    <link rel="manifest" href="/ICS2O-Unit5-03-JS/manifest.webmanifest" />
+    <link rel="manifest" href="/ICS2O-Unit5-04-JS/manifest.webmanifest" />
     <link rel="stylesheet" href="./css/styles.css" />
     <!--- None blocking for Lighthouse report --->
     <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously --->
@@ -64,13 +64,27 @@
           height="25%"
         />
         <p></p>
-        <h3>Are you old enough to watch R rated movie?</h3>
+        <h3>Discount or no discount?</h3>
         <div>
+          <!-- selector -->
+           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+             <select class="mdl-textfield__input" id="week" name="week">
+              <option></option>
+              <option value="Sunday">Sunday</option>
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+            </select>
+            <label class="mdl-textfield__label" for="week">Today's day</label>
+          </div>
           <!-- Simple Textfield -->
           <form action="#">
             <div class="mdl-textfield mdl-js-textfield">
               <input class="mdl-textfield__input" type="text" id="ageInput" />
-              <label class="mdl-textfield__label" for="ageInput">Age...</label>
+              <label class="mdl-textfield__label" for="ageinput">Age...</label>
             </div>
           </form>
         </div>
@@ -81,11 +95,11 @@
             class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
             onclick="myButtonClicked ()"
           >
-            Movie maturity recommendation
+            Discount?
           </button>
         </div>
         <br />
-        <div id="movie-maturity-recommendation">?</div>
+        <div id="weekday-discount">?</div>
       </main>
     </div>
   </body>

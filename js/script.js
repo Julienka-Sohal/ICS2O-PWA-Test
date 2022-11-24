@@ -19,9 +19,13 @@ if (navigator.serviceWorker) {
 function myButtonClicked() {
   const day = document.getElementById("week").value
   const typeAge = document.getElementById("ageInput").value
-  
-  if ((day == "Tuesday" || day == "Thursday") || (typeAge >= 12 && typeAge <= 25)) {
-    document.getElementById("weekday-discount").innerHTML = 
+
+  if (
+    day == "Tuesday" ||
+    day == "Thursday" ||
+    (typeAge >= 12 && typeAge <= 25)
+  ) {
+    document.getElementById("weekday-discount").innerHTML =
       "You are eligible to get a discount!"
   } else {
     document.getElementById("weekday-discount").innerHTML =

@@ -18,7 +18,7 @@ if (navigator.serviceWorker) {
 //process
 function myButtonClicked() {
   const day = document.getElementById("week").value
-  const typeAge = document.getElementById("ageInput").value
+  const typeAge = document.getElementById("typeAge").value
 
   if (
     day == "Tuesday" ||
